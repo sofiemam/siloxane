@@ -1,0 +1,21 @@
+.logo{
+    width: 52%;
+
+    min-width: 200px;
+    
+    max-width: 330px;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+  
+    .logo{
+       min-width: 100%;
+       
+     
+    }
+    .deconnexion{
+        width: 10px;
+      float: right !important;
+    }
+    
+  }

@@ -1,0 +1,14 @@
+.footer{
+    bottom: 0;
+    position: absolute
+}
+.logo_silox{
+    width: 30px;
+  
+}
+.copyrigth{
+    color: #b0b0b0;
+    font-size: 9pt;
+    padding: 15px;
+}
+
