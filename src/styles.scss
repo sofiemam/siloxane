@@ -1,7 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
 div.newrow {
 	/* display: -ms-flexbox;
 	display: flex; */
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
+} 
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
 }
