@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit  } from '@angular/core';
 
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,10 +9,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 
 export class LoginComponent implements OnInit {
+
   registerForm: FormGroup;
   submitted = false;
  
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder ) { }
+  
+
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({

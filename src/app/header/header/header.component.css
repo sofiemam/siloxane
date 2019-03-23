@@ -1,7 +1,10 @@
 .head{
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .ctn{
-    margin-left:10px;
-    
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+

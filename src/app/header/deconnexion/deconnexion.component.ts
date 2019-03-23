@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deconnexion.component.css']
 })
 export class DeconnexionComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit() {
