@@ -19,12 +19,10 @@
           </div>
 
         <!-- les col pour les tableau  -->
-          <div class="row row-no-gutters ">
-
-            
-              <div class="col-sm-5 tabBord" style="background-color:red">
-                  <div class="col-sm-1 tabBordSid" style="background-color:  #79B7F3; height:150px;">
-                  safia
+          <div class="row row-no-gutters "> 
+            <div class="col-sm-5 tabBord">
+                  <div class="col-sm-1 tabBordSid" style="background-color:  #79B7F3; ">
+                  
                   </div>
                   Mes Dossiers
                 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -51,13 +49,14 @@
                     </mat-table>
         
               </div>
-              
+
+
+               
               <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-                <div class="row row-no-gutters ">
-               <div class="col-sm-1 tabBordSid" style="background-color:  #79B7F3; height:150px;">
-                  safia
+              <div class="col-sm-5 tabBord">
+                <div class="col-sm-1 tabBordSid" style="background-color:  #FFCD5D; ">
+                  
                   </div>
-              <div class="col-sm-5 tabBord" style="background-color: red">
                   Dossiers récement consultés
                   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                         <!-- Position Column -->
@@ -86,18 +85,40 @@
             <br>
             <p> espace</p>
           
-              <div class="col-sm-5   " style="background-color:red;">.col-sm-4</div>
+            <div class="row row-no-gutters "> 
+              <div class="col-sm-5"  style="height:80px; background-color:white;">
+                <div class="col-sm-1 tabBordSid" style="background-color:  #1656BD; height: 80px;">
+                  
+                  </div>
+                   
+                  <input type="text" name="search" placeholder="Rechercher un dossier"> 
+              </div>
               <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-              <div class="col-sm-5 " style="background-color:red;">.col-sm-4</div>
-            
+              <div class="col-sm-5 " style="height:80px; background-color:white;" >
+                <div class="col-sm-1 tabBordSid" style="background-color:  #FF9960; height: 80px;">
+                 
+                  </div>
+                   Tableau des alertes
+              </div>
+            </div>
             <br>
             <p>espace</p>
             
-            
-              <div class="col-sm-5 tabBord" style="background-color:red">.col-sm-4</div>
+            <div class="row row-no-gutters "> 
+              <div class="col-sm-5 tabBord">
+                <div class="col-sm-1 tabBordSid" style="background-color: #FF61CD;">
+                  
+                  </div>
+                  Mes recherches et requetes
+                </div>
               <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-              <div class="col-sm-5 tabBord" style="background-color: red;">.col-sm-4</div>
-            
+              <div class="col-sm-5 tabBord">
+                <div class="col-sm-1 tabBordSid" style="background-color:  #9960FF;">
+                  
+                  </div>
+                  Mes bilans et états
+              </div>
+            </div>
 
           <!-- tableau1 -->
               
