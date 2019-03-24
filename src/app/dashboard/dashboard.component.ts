@@ -29,7 +29,11 @@ export class DashboardComponent implements OnInit {
   admin ={ type :"Administrateur, "};
   displayedColumns: string[] = ['Nom', 'Prenom', 'DateNaiss'];
   dataSource = ELEMENT_DATA;
-  constructor() { }
+
+
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }

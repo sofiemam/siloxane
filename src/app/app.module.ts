@@ -9,8 +9,8 @@ import { HeaderModule } from './header/header.module';
 import { LoginModule } from './login/login.module';
 import { routerNgProbeToken } from '@angular/router/src/router_module';
 import { MenuComponent } from './menu/menu.component';
-import { NotFoundComponent } from './error-pages/not-found/not-found.component';
-import {MilieuComponent} from './milieu/milieu.component';
+//import { NotFoundComponent } from './error-pages/not-found/not-found.component';
+//import {MilieuComponent} from './milieu/milieu.component';
 import {Routes} from "@angular/router"; 
 import { LoginComponent } from './login/login/login.component';
 import { SaisieIndividuComponent } from './saisie-individu/saisie-individu.component';
@@ -25,8 +25,8 @@ import { MatTableModule } from '@angular/material';
     AppComponent,
     DashboardComponent,
     MenuComponent,
-    NotFoundComponent,
-    MilieuComponent,
+    //NotFoundComponent,
+    
     SaisieIndividuComponent,
     
      

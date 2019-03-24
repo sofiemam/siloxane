@@ -20,11 +20,11 @@
 
         <!-- les col pour les tableau  -->
           <div class="row row-no-gutters "> 
-            <div class="col-sm-5 tabBord">
+            <div class=" col-lg-5 col-md-5 col-sm-5 tabBord">
                   <div class="col-sm-1 tabBordSid" style="background-color:  #79B7F3; ">
-                  
+                    <img class="myicone"  src="assets/images/tabbord-mesdossiers.svg"> 
                   </div>
-                  Mes Dossiers
+                 <div class ="titre">Mes Dossiers</div>
                 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                       <!-- Position Column -->
                       <ng-container matColumnDef="Nom">
@@ -52,10 +52,10 @@
 
 
                
-              <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-              <div class="col-sm-5 tabBord">
+              <div class="col-sm-1" style="background-color: transparent;"></div>
+              <div class="col-lg-5 col-md-5 col-sm-5 tabBord">
                 <div class="col-sm-1 tabBordSid" style="background-color:  #FFCD5D; ">
-                  
+                  <img class="myicone"  src="assets/images/tabbord-dossiers.svg">
                   </div>
                   Dossiers récement consultés
                   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -86,17 +86,17 @@
             <p> espace</p>
           
             <div class="row row-no-gutters "> 
-              <div class="col-sm-5"  style="height:80px; background-color:white;">
+              <div class="col-lg-5 col-md-5 col-sm-5 "  style="height:80px; background-color:white;">
                 <div class="col-sm-1 tabBordSid" style="background-color:  #1656BD; height: 80px;">
-                  
+                  <img class="myicone"  src="assets/images/tabbord-recherche.svg">
                   </div>
                    
                   <input type="text" name="search" placeholder="Rechercher un dossier"> 
               </div>
-              <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-              <div class="col-sm-5 " style="height:80px; background-color:white;" >
+              <div class="col-sm-1" style="background-color:transparent;"></div>
+              <div class="col-lg-5 col-md-5 col-sm-5  " style="height:80px; background-color:white;" >
                 <div class="col-sm-1 tabBordSid" style="background-color:  #FF9960; height: 80px;">
-                 
+                  <img class="myicone"  src="assets/images/tabbord-alert.svg">
                   </div>
                    Tableau des alertes
               </div>
@@ -105,16 +105,20 @@
             <p>espace</p>
             
             <div class="row row-no-gutters "> 
-              <div class="col-sm-5 tabBord">
+              <div class="col-lg-5 col-md-5 col-sm-5  tabBord">
+                
                 <div class="col-sm-1 tabBordSid" style="background-color: #FF61CD;">
-                  
+                  <img class="myicone"  src="assets/images/tabbord-requetes.svg">
                   </div>
-                  Mes recherches et requetes
-                </div>
-              <div class="col-sm-1" style="background-color:lavenderblush;">espace</div>
-              <div class="col-sm-5 tabBord">
-                <div class="col-sm-1 tabBordSid" style="background-color:  #9960FF;">
                   
+                  Mes recherches et requetes<br>
+                  
+                  
+                </div>
+              <div class="col-sm-1" style="background-color : transparent;"></div>
+              <div class="col-lg-5 col-md-5 col-sm-5  tabBord">
+                <div class="col-sm-1 tabBordSid" style="background-color:  #9960FF;">
+                  <img class="myicone"  src="assets/images/tabbord-bilans.svg">
                   </div>
                   Mes bilans et états
               </div>

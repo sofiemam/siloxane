@@ -75,30 +75,32 @@ li.dropdown:hover > .dropdown-menu {
 //     flex: 0 0 60%;
 //     //width: 10%;
 // }
-.mat-column-Prenom, .mat-column-Nom, .mat-column-DateNaiss {
+// .mat-column-Prenom, .mat-column-Nom, .mat-column-DateNaiss {
     
-    flex: 0 0 60%;
-    width:10%;
-    height: 10%;
-    text-align: left;
+// //     flex: 0 0 60%;
+// //     width:10%;
+//      height: 80%;
+// //     text-align: left;
 
-}
+//   }
 
-.mat-table{
-    width:70%;
-    
-     margin-top: 7%; margin-left: 15%;
+ .mat-table{
+    width:90%;
+    border: 0px;
+     margin-top: 15px; margin-left: 15px; text-align: center;
  
 }
 
-.mat-row:hover {
-    background-color: #f1f1f1;
-  }
+// .mat-row:hover {
+//     background-color: #f1f1f1;
+//   }
 .tabBord{
     height: 250px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: medium;
     background-color: white;
+    
+    
     
 
 
@@ -118,5 +120,14 @@ input[type=text] {
     position: center;
 
   }
+.myicone{
+    position:absolute;
+    margin-top: 15px; margin-left: 5px; margin-right: 5px;
+  
+}
+.titre{
+    margin-top: 15px; padding-left: 30px; 
+
+}
   
 
