@@ -13,7 +13,7 @@
 
 
             <div class=" admin " >
-              <span style="color:#79B7F3; font-size: 20px; "><b>{{admin.type}}</b></span><br>
+              <span style="color:#79B7F3;  "> {{admin.type}} </span><br>
 
               <P>Gérez votre fichier de vaccinations</P><br>
           </div>
@@ -24,8 +24,8 @@
                   <div class="col-sm-1 tabBordSid" style="background-color:  #79B7F3; ">
                     <img class="myicone"  src="assets/images/tabbord-mesdossiers.svg"> 
                   </div>
-                 <div class ="titre">Mes Dossiers</div>
-                <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                 <div class ="titre" ><p> Mes Dossiers</p> </div>
+                <mat-table [dataSource]="dataSource" >
                       <!-- Position Column -->
                       <ng-container matColumnDef="Nom">
                         <th mat-header-cell *matHeaderCellDef> Nom </th>
@@ -57,8 +57,8 @@
                 <div class="col-sm-1 tabBordSid" style="background-color:  #FFCD5D; ">
                   <img class="myicone"  src="assets/images/tabbord-dossiers.svg">
                   </div>
-                  Dossiers récement consultés
-                  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                  <div class ="titre" ><p>Dossiers récement consultés</p> </div>
+                  <mat-table [dataSource]="dataSource" >
                         <!-- Position Column -->
                         <ng-container matColumnDef="Nom">
                           <th mat-header-cell *matHeaderCellDef> Nom </th>
@@ -76,9 +76,19 @@
                           <th mat-header-cell *matHeaderCellDef> Date Naissance </th>
                           <td mat-cell *matCellDef="let element"> {{element.DateNaiss}} </td>
                         </ng-container>
-                      
+                        <ng-container matColumnDef="Imge">
+                          <th mat-header-cell *matHeaderCellDef> Imge</th>
+                          <td mat-cell *matCellDef="let element"> {{element.Imge}} </td>
+                        </ng-container>
+
+                        <!-- <ng-container matColumnDef="x">
+                          <th mat-header-cell *matHeaderCellDef> x </th>
+                          <td mat-cell *matCellDef="let element"> {{element.x}} </td>
+                        </ng-container>
+                       -->
                         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        
                       </mat-table>
               </div>
             </div>
@@ -98,8 +108,11 @@
                 <div class="col-sm-1 tabBordSid" style="background-color:  #FF9960; height: 80px;">
                   <img class="myicone"  src="assets/images/tabbord-alert.svg">
                   </div>
-                   Tableau des alertes
-              </div>
+                  
+                  <div class ="titre" > Tableau des alertes <span class="badge"  style="background-color:  #FF9960;">5</span>  
+                     
+                  </div>
+              </div>t consultés
             </div>
             <br>
             <p>espace</p>
@@ -111,8 +124,36 @@
                   <img class="myicone"  src="assets/images/tabbord-requetes.svg">
                   </div>
                   
-                  Mes recherches et requetes<br>
+                  <div class ="titre" ><p>Mes recherches et requetes</p> </div>
                   
+                  <mat-table [dataSource]="dataSource" >
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="Nom">
+                      <th mat-header-cell *matHeaderCellDef> Nom </th>
+                      <td mat-cell *matCellDef="let element"> {{element.Nom}} </td>
+                    </ng-container>
+                  
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="Prenom">
+                      <th mat-header-cell *matHeaderCellDef> Prenom </th>
+                      <td mat-cell *matCellDef="let element"> {{element.Prenom}} </td>
+                    </ng-container>
+                  
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="DateNaiss">
+                      <th mat-header-cell *matHeaderCellDef> Date Naissance </th>
+                      <td mat-cell *matCellDef="let element"> {{element.DateNaiss}} </td>
+                    </ng-container>
+
+                    <!-- <ng-container matColumnDef="x">
+                      <th mat-header-cell *matHeaderCellDef> x </th>
+                      <td mat-cell *matCellDef="let element"> {{element.x}} </td>
+                    </ng-container>
+                   -->
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    
+                  </mat-table>
                   
                 </div>
               <div class="col-sm-1" style="background-color : transparent;"></div>
@@ -120,7 +161,35 @@
                 <div class="col-sm-1 tabBordSid" style="background-color:  #9960FF;">
                   <img class="myicone"  src="assets/images/tabbord-bilans.svg">
                   </div>
-                  Mes bilans et états
+                  <div class ="titre" ><p> Mes bilans et états</p> </div>
+                  <mat-table [dataSource]="dataSource" >
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="Nom">
+                      <th mat-header-cell *matHeaderCellDef> Nom </th>
+                      <td mat-cell *matCellDef="let element"> {{element.Nom}} </td>
+                    </ng-container>
+                  
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="Prenom">
+                      <th mat-header-cell *matHeaderCellDef> Prenom </th>
+                      <td mat-cell *matCellDef="let element"> {{element.Prenom}} </td>
+                    </ng-container>
+                  
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="DateNaiss">
+                      <th mat-header-cell *matHeaderCellDef> Date Naissance </th>
+                      <td mat-cell *matCellDef="let element"> {{element.DateNaiss}} </td>
+                    </ng-container>
+
+                    <!-- <ng-container matColumnDef="x">
+                      <th mat-header-cell *matHeaderCellDef> x </th>
+                      <td mat-cell *matCellDef="let element"> {{element.x}} </td>
+                    </ng-container>
+                   -->
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    
+                  </mat-table>
               </div>
             </div>
 

@@ -9,12 +9,14 @@ export interface PeriodicElement {
   Nom: string;
   Prenom: string;
   DateNaiss: string;
+
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {Nom: 'MAMOUN', Prenom: 'Safia', DateNaiss: '10/11/1993'},
   {Nom: 'DUPON', Prenom: 'Jhon', DateNaiss: '10/11/1993'},
   {Nom: 'MANGA', Prenom: 'Alex', DateNaiss: '10/11/1993'},
+
  
   
 ];
